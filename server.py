@@ -66,6 +66,7 @@ def predict():
     prediction = classifier.predict([values])
     if prediction[0] == 0:
             result = 'Your Depression test result : No Depression'
+            suggestion = 'dont be sad'
     if prediction[0] == 1:
             result = 'Your Depression test result : Mild Depression'
     if prediction[0] == 2:
