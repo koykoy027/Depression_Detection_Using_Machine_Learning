@@ -33,6 +33,11 @@ def logout():
 def sentiment():
     return render_template("sentiment.html")
 
+@app.route("/quizBased")
+def quizBased():
+    return render_template("quizbase.html")    
+
+
 
 @app.route("/predictSentiment", methods=["POST"])
 def predictSentiment():

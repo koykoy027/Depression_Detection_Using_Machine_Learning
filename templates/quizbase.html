@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Mental Health Integrated Assistance</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="icon" href="{{url_for('static',filename='images/logo.png')}}" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='assets/css/custom.css')}}"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='assets/css/main.css')}}"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="{{url_for('static',filename='assets/css/noscript.css')}}"
+      />
+    </noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1><a href="/">Mental Health Integrated Assistance</a></h1>
+        <nav id="nav">
+          <ul>
+            <li class="special">
+              <a href="#menu" class="menuToggle"><span>Menu</span></a>
+              <div id="menu">
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/#one">Quiz base test</a></li>
+                  <li><a href="/sentiment">Sentiment Based Test</a></li>
+                  <li><a href="/#three">About us</a></li>
+                  <li><a href="/#cta">Contact us</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- <article id="main">
+        <section id="one" class="wrapper style2 special">
+        <div class="inner">
+          <header class="major">
+            <h2>
+              Take a Test
+            </h2>
+            <br>
+            <small>
+              <em>Instructions: Beside is a list of questions that relate to life experiences common among people who have been diagnosed with depression. Please read each question carefully, and indicate how often you have experienced the same or similar challenges in the past few months.</em>
+            </small>
+          </header>
+          
+          <form action="/predict" method="POST">
+  <section id="service" class="section-padding">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-4">
+          <h2 class="ser-title">Take a Test</h2>
+          <hr class="botm-line">
+          <p style="font: black">Instructions: Beside is a list of questions that relate to life experiences common among people who have been diagnosed with depression. Please read each question carefully, and indicate how often you have experienced the same or similar challenges in the past few months.</p>
+        
+          <div class="service-info">
+              <div class="icon-info">
+                  
+                <h4>Little interest or pleasure in doing things</h4>
+                <ul class="list-group">
+                  <li><div>
+                    <input type="radio" id="a10" name="a1" value="0" required="required">
+                    <label for="a10">Not at all.</label>
+                  </div></li>
+                  <li><div>
+                      <input type="radio" id="a11" name="a1" value="1" required="required">
+                      <label for="a11">Several days.</label>
+                  </div></li>
+                  </li>
+                  <li><div>
+                      <input type="radio" id="a12" name="a1" value="2" required="required">
+                      <label for="a12">More than half the days.</label>
+                  </div></li>
+                  <li><div>
+                      <input type="radio" id="a13" name="a1" value="3" required="required">
+                      <label for="a13">Nearly every day.</label>
+                  </div></li>
+                </ul>
+              
+              </div>
+            </div>
+  
+            <div class="service-info">
+              <div class="icon-info">
+                  
+                <h4>Feeling down, depressed, or hopeless</h4>
+                <ul class="list-group">
+                    <li><div>
+                      <input type="radio" id="a20" name="a2" value="0" required="required">
+                      <label for="a20">Not at all.</label>
+                    </div></li>
+                    <li><div>
+                        <input type="radio" id="a21" name="a2" value="1"  required="required">
+                        <label for="a21">Several days.</label>
+                    </div></li>
+                    </li>
+                    <li><div>
+                        <input type="radio" id="a22" name="a2" value="2" required="required">
+                        <label for="a22">More than half the days.</label>
+                    </div></li>
+                    <li><div>
+                        <input type="radio" id="a23" name="a2" value="3" required="required">
+                        <label for="a23">Nearly every day.</label>
+                    </div></li>
+                  </ul>
+                   
+              </div>
+            </div>
+
+            <div class="service-info">
+                <div class="icon-info">
+                  <h4>Trouble falling or staying asleep, or sleeping too much</h4>
+                  
+                    <ul class="list-group">
+                      <li><div>
+                        <input type="radio" id="a30" name="a3" value="0" required="required">
+                        <label for="a30">Not at all.</label>
+                      </div></li>
+                      <li><div>
+                          <input type="radio" id="a31" name="a3" value="1" required="required">
+                          <label for="a31">Several days.</label>
+                      </div></li>
+                      </li>
+                      <li><div>
+                          <input type="radio" id="a32" name="a3" value="2" required="required">
+                          <label for="a32">More than half the days.</label>
+                      </div></li>
+                      <li><div>
+                          <input type="radio" id="a33" name="a3" value="3" required="required">
+                          <label for="a33">Nearly every day.</label>
+                      </div></li>
+                    </ul>
+                     
+                </div>
+              </div>
+
+        </div>
+
+        
+
+        <div class="col-md-4 col-sm-4">
+        
+          <div class="service-info">
+            <div class="icon-info">
+              <h4>Feeling tired or having little energy</h4>
+              
+                <ul class="list-group">
+                  <li><div>
+                    <input type="radio" id="a40" name="a4" value="0" required="required">
+                    <label for="a40">Not at all.</label>
+                  </div></li>
+                  <li><div>
+                      <input type="radio" id="a41" name="a4" value="1" required="required">
+                      <label for="a41">Several days.</label>
+                  </div></li>
+                  </li>
+                  <li><div>
+                      <input type="radio" id="a42" name="a4" value="2" required="required">
+                      <label for="a42">More than half the days.</label>
+                  </div></li>
+                  <li><div>
+                      <input type="radio" id="a43" name="a4" value="3" required="required">
+                      <label for="a43">Nearly every day.</label>
+                  </div></li>
+                </ul>
+              
+            </div>
+          </div>
+
+          <div class="service-info">
+            <div class="icon-info">
+              <h4>Poor appetite or overeating</h4>
+               
+              <ul class="list-group">
+                  <li><div>
+                    <input type="radio" id="a50" name="a5" value="0" required="required">
+                    <label for="a50">Not at all.</label>
+                  </div></li>
+                  <li><div>
+                      <input type="radio" id="a51" name="a5" value="1" required="required">
+                      <label for="a51">Several days.</label>
+                  </div></li>
+                  </li>
+                  <li><div>
+                      <input type="radio" id="a52" name="a5" value="2" required="required">
+                      <label for="a52">More than half the days.</label>
+                  </div></li>
+                  <li><div>
+                      <input type="radio" id="a53" name="a5" value="3" required="required">
+                      <label for="a53">Nearly every day.</label>
+                  </div></li>
+                </ul>
+                
+            </div>
+          </div>
+
+          <div class="service-info">
+              <div class="icon-info">
+                <h4>Feeling bad about yourself - or that you are a failure or have let yourself or your family down</h4>
+                
+                  <ul class="list-group">
+                    <li><div>
+                      <input type="radio" id="a60" name="a6" value="0" required="required">
+                      <label for="a60">Not at all.</label>
+                    </div></li>
+                    <li><div>
+                        <input type="radio" id="a61" name="a6" value="1" required="required">
+                        <label for="a61">Several days.</label>
+                    </div></li>
+                    </li>
+                    <li><div>
+                        <input type="radio" id="a62" name="a6" value="2" required="required">
+                        <label for="a62">More than half the days.</label>
+                    </div></li>
+                    <li><div>
+                        <input type="radio" id="a63" name="a6" value="3" required="required">
+                        <label for="a63">Nearly every day.</label>
+                    </div></li>
+                  </ul>
+                  
+              </div>
+            </div>
+
+            <div class="service-info">
+                <div class="icon-info">
+                  <h4>Trouble concentrating on things, such as reading the newspaper or watching television</h4>
+                  
+                    <ul class="list-group">
+                      <li><div>
+                        <input type="radio" id="a70" name="a7" value="0" required="required">
+                        <label for="a70">Not at all.</label>
+                      </div></li>
+                      <li><div>
+                          <input type="radio" id="a71" name="a7" value="1" required="required">
+                          <label for="a71">Several days.</label>
+                      </div></li>
+                      </li>
+                      <li><div>
+                          <input type="radio" id="a72" name="a7" value="2" required="required">
+                          <label for="a72">More than half the days.</label>
+                      </div></li>
+                      <li><div>
+                          <input type="radio" id="a73" name="a7" value="3" required="required">
+                          <label for="a73">Nearly every day.</label>
+                      </div></li>
+                    </ul>
+                    
+                </div>
+              </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-4">
+
+          
+
+          <div class="icon-info">
+            <h4>Moving or speaking so slowly that other people could have noticed</h4>
+            <ul class="list-group">
+                <li><div>
+                  <input type="radio" id="a80" name="a8" value="0" required="required">
+                  <label for="a80">Not at all.</label>
+                </div></li>
+                <li><div>
+                    <input type="radio" id="a81" name="a8" value="1" required="required">
+                    <label for="a81">Several days.</label>
+                </div></li>
+                </li>
+                <li><div>
+                    <input type="radio" id="a82" name="a8" value="2" required="required">
+                    <label for="a82">More than half the days.</label required="required">
+                </div></li>
+                <li><div>
+                    <input type="radio" id="a83" name="a8" value="3" required="required">
+                    <label for="a83">Nearly every day.</label>
+                </div></li>
+              </ul>
+          </div>
+        </div>
+
+         
+        <div class="service-info">
+          <div class="icon-info">
+            <h4>Thoughts that you would be better off dead, or of hurting yourself</h4>
+            <ul class="list-group">
+                <li><div>
+                  <input type="radio" id="a90" name="a9" value="0" required="required">
+                  <label for="a90">Not at all.</label>
+                </div></li>
+                <li><div>
+                    <input type="radio" id="a91" name="a9" value="1" required="required">
+                    <label for="a91">Several days.</label>
+                </div></li>
+                </li>
+                <li><div>
+                    <input type="radio" id="a92" name="a9" value="2" required="required">
+                    <label for="a92">More than half the days.</label>
+                </div></li>
+                <li><div>
+                    <input type="radio" id="a93" name="a9" value="3" required="required">
+                    <label for="a93">Nearly every day.</label>
+                </div></li>
+              </ul>
+          </div>
+        </div>
+        
+
+        
+        <div class="service-info">
+          <div class="icon-info">
+            <h4>If you've had any days with issues above, how difficult have these problems made it for you at work, home, school, or with other people?</h4>
+            <ul class="list-group">
+                <li><div>
+                  <input type="radio" id="a100" name="a10" value="0" required="required">
+                  <label for="a100">Not difficult at all.</label>
+                </div></li>
+                <li><div>
+                    <input type="radio" id="a101" name="a10" value="1" required="required">
+                    <label for="a101">Somewhat difficult.</label>
+                </div></li>
+                </li>
+                <li><div>
+                    <input type="radio" id="a102" name="a10" value="2" required="required">
+                    <label for="a102">Very difficult.</label>
+                </div></li>
+                <li><div>
+                    <input type="radio" id="a103" name="a10" value="3" required="required">
+                    <label for="a103">Extremly difficult.</label>
+                </div></li>
+              </ul>
+          </div>
+        </div>
+
+        <button type="submit" class="button primary fit small">See Results</button>
+      </div>
+    </div>
+  </section>
+</form>
+
+
+
+        </div>
+      </section>
+      </article> -->
+
+      <article id="main">
+        <section id="one" class="wrapper style2 special">
+          <div class="inner">
+            <form id="form"  style=" align-content: left;">
+              <!-- <ul id="progressbar">
+                <li class="active" id="step1">
+                  <strong>Step 1</strong>
+                </li>
+                <li id="step2"><strong>Step 2</strong></li>
+                <li id="step3"><strong>Step 3</strong></li>
+                <li id="step4"><strong>Step 4</strong></li>
+                <li id="step5"><strong>Step 5</strong></li>
+                <li id="step6"><strong>Step 6</strong></li>
+              </ul> -->
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+              <br />
+
+              <fieldset>
+                
+                <div class="service-info">
+              <div class="icon-info">
+                  
+                <h4>1. Little interest or pleasure in doing things</h4>
+                <class="list-group">
+                 <div>
+                    <input type="radio" id="a10" name="a1" value="0" required="required">
+                    <label for="a10">Not at all.</label>
+                  </div>
+                  <div>
+                      <input type="radio" id="a11" name="a1" value="1" required="required">
+                      <label for="a11">Several days.</label>
+                  </div>
+                  
+                  <div>
+                      <input type="radio" id="a12" name="a1" value="2" required="required">
+                      <label for="a12">More than half the days.</label>
+                  </div>
+                  <div>
+                      <input type="radio" id="a13" name="a1" value="3" required="required">
+                      <label for="a13">Nearly every day.</label>
+                  </div>
+                
+              
+              </div>
+            </div>
+                <input
+                  type="button"
+                  name="next-step"
+                  class="next-step button primary"
+                  value="Next Step"
+                />
+              </fieldset>
+
+              <fieldset>
+                <div class="service-info">
+              <div class="icon-info">
+                  
+                <h4>2. Feeling down, depressed, or hopeless</h4>
+                <div class="list-group">
+                    <div>
+                      <input type="radio" id="a20" name="a2" value="0" required="required">
+                      <label for="a20">Not at all.</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="a21" name="a2" value="1"  required="required">
+                        <label for="a21">Several days.</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="a22" name="a2" value="2" required="required">
+                        <label for="a22">More than half the days.</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="a23" name="a2" value="3" required="required">
+                        <label for="a23">Nearly every day.</label>
+                    </div>
+                </div>
+                   
+              </div>
+            </div>
+
+                <input
+                  type="button"
+                  name="previous-step"
+                  class="previous-step button"
+                  value="Previous Step"
+                />
+                <input
+                  type="button"
+                  name="next-step"
+                  class="next-step button primary"
+                  value="Next Step"
+                />
+                
+              </fieldset>
+
+              <fieldset>
+                <div class="service-info">
+                <div class="icon-info">
+                  <h4>3. Trouble falling or staying asleep, or sleeping too much</h4>
+                  
+                    <div class="list-group">
+                      <div>
+                        <input type="radio" id="a30" name="a3" value="0" required="required">
+                        <label for="a30">Not at all.</label>
+                      </div>
+                      <div>
+                          <input type="radio" id="a31" name="a3" value="1" required="required">
+                          <label for="a31">Several days.</label>
+                      </div>
+                      
+                      <div>
+                          <input type="radio" id="a32" name="a3" value="2" required="required">
+                          <label for="a32">More than half the days.</label>
+                      </div>
+                      <div>
+                          <input type="radio" id="a33" name="a3" value="3" required="required">
+                          <label for="a33">Nearly every day.</label>
+                      </div>
+                    </div>
+                     
+                </div>
+              </div>
+              <input
+                  type="button"
+                  name="previous-step"
+                  class="previous-step button"
+                  value="Previous Step"
+                />
+                <input
+                  type="button"
+                  name="next-step"
+                  class="next-step button primary"
+                  value="Next Step"
+                />
+              </fieldset>
+
+              <fieldset>
+          <div class="service-info">
+            <div class="icon-info">
+              <h4>4.Feeling tired or having little energy</h4>
+              
+                <div class="list-group">
+                  <div>
+                    <input type="radio" id="a40" name="a4" value="0" required="required">
+                    <label for="a40">Not at all.</label>
+                  </div>
+                  <div>
+                      <input type="radio" id="a41" name="a4" value="1" required="required">
+                      <label for="a41">Several days.</label>
+                  </div>
+                  
+                  <div>
+                      <input type="radio" id="a42" name="a4" value="2" required="required">
+                      <label for="a42">More than half the days.</label>
+                  </div>
+                  <div>
+                      <input type="radio" id="a43" name="a4" value="3" required="required">
+                      <label for="a43">Nearly every day.</label>
+                  </div>
+
+            </div>
+            </div>
+                <input
+                  type="button"
+                  name="previous-step"
+                  class="previous-step button"
+                  value="Previous Step"
+                />
+                <input
+                  type="submit"
+                  name="next-step"
+                  class="next-step button primary"
+                  value="Submit"
+                />
+
+              </fieldset>
+
+              
+
+              <!-- <fieldset>
+                
+                <div class="finish">
+                  <h2 class="text text-center">
+                    <strong>FINISHED</strong>
+                  </h2>
+                </div>
+                <input
+                  type="button"
+                  name="previous-step"
+                  class="previous-step"
+                  value="Previous Step"
+                />
+              </fieldset> -->
+            </form>
+          </div>
+        </section>
+      </article>
+
+      <section class="wrapper style5">
+        <div class="inner">
+          <h3>It's something important you want to know.</h3>
+          <p>
+            If you have some symptoms of depression. Right now, these symptoms
+            are likely causing problems in your daily life. These problems may
+            be big, like making it hard for you to take care of everyday
+            activities and enjoy the things you usually do. You should get help
+            right away.
+          </p>
+
+          <hr />
+
+          <h4>Find Help.</h4>
+          <p>
+            When you're feeling depressed, it can be hard to have energy to make
+            a phone call. But having support from others can be helpful. Try
+            talking to your doctor or a therapist. They can help you get
+            treatment to deal with depression. You can also try telling family
+            and friends how you’re feeling.
+          </p>
+          <p>
+            How you’re feeling now isn't how you’ll always feel. People do get
+            better. There are many good treatments for depression.
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands fa-dribbble"
+              ><span class="label">Dribbble</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon solid fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; MENTAL HEALTH INTEGRATED ASSISTANCE</li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{url_for('static',filename='assets/js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/jquery.scrollex.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/jquery.scrolly.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/browser.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/breakpoints.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/util.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/custom.js')}}"></script>
+  </body>
+</html>
