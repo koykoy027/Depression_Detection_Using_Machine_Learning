@@ -54,15 +54,30 @@
           <h2>
             {% block code_block %} {% if result == 1 %}
             <h1 class="white">You are facing depression</h1>
+            <p>
+              If you have some symptoms of depression. Right now, these symptoms
+              are likely causing problems in your daily life. These problems may
+              be big, like making it hard for you to take care of everyday
+              activities and enjoy the things you usually do. You should get
+              help right away.
+            </p>
             {% else %}
             <h1 class="white">You have no depression</h1>
+            <p>
+              Working to improve the quality of interpersonal relationships can
+              reduce feelings of loneliness while offering some protection
+              against depression. First, Try to meditate. Second, Listen to
+              music
+            </p>
+
             {% endif %} {% endblock %}
           </h2>
-          <a href="/sentiment" class="button primary fit small">Test again</a>
+          <a class="button primary" href="/sentiment">Try again</a>
+          <a class="button primary" href="/#one">Try Quiz Base Test</a>
         </header>
       </article>
       <section class="wrapper style5">
-        <div class="inner">
+        <div class="inner" style="text-align: justify">
           <h3>It's something important you want to know.</h3>
           <p>
             If you have some symptoms of depression. Right now, these symptoms
